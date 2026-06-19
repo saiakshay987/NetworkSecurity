@@ -24,6 +24,9 @@ TEST_FILE_NAME: str = "test.csv"
 
 SCHEMA_FILE_PATH: str = os.path.join("data_schema", "schema.yaml")
 
+SAVED_MODEL_DIR: str = os.path.join("saved_models")
+
+
 """Data Validation related constant start with DATA_VALIDATION_VARIABLE_NAME"""
 
 DATA_VALIDATION_DIR_NAME: str = "data_validation"
@@ -46,3 +49,12 @@ DATA_TRANSFORMATION_IMPUTER_PARAMS : dict = {
     "metric": "nan_euclidean",
 }
 
+"""Model Trainer related constant start with MODEL_TRAINER_VARIABLE_NAME"""
+
+MODEL_TRAINER_DIR_NAME: str = "model_trainer"
+MODEL_TRAINER_TRAINED_MODEL_DIR: str = "trained_model"
+MODEL_TRAINER_TRAINED_MODEL_FILE_NAME: str = "model.pkl"
+MODEL_TRAINER_EXPECTED_ACCURACY: float = 0.6
+MODEL_TRAINER_MODEL_CONFIG_DIR: str = "model_config"
+MODEL_TRAINER_MODEL_CONFIG_FILE_NAME: str = "model_config.yaml"
+MODEL_TRAINER_OVERFITTING_UNDERFITTING_THRESHOLD: float = 0.05
